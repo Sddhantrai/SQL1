@@ -1,0 +1,75 @@
+CREATE TABLE employees(
+	emp_id INT PRIMARY KEY,
+	name VARCHAR(50),
+	age INT,
+	country VARCHAR(30),
+	department VARCHAR(30),
+	salary INT,
+	hire_date DATE
+);
+
+INSERT INTO employees VALUES
+(1, 'Nehal', 25, 'India', 'IT', 40000, '2023-01-10'),
+(2, 'Amit', 30, 'India', 'HR', 35000, '2022-06-15'),
+(3, 'Rahul', 28, 'USA', 'IT', 60000, '2021-09-20'),
+(4, 'Sneha', 26, 'India', 'Finance', 45000, '2023-03-05'),
+(5, 'John', 35, 'USA', 'HR', 55000, '2020-11-11'),
+(6, 'Priya', 29, 'India', 'IT', 50000, '2022-12-01'),
+(7, 'David', 32, 'UK', 'Finance', 48000, '2021-04-18'),
+(8, 'Anita', 27, 'India', 'HR', 38000, '2023-07-22');
+
+--SELECT name, salary
+--FROM employees
+
+--SELECT country, emp_id
+--FROM employees
+--WHERE country = 'India'
+
+--SELECT salary, name 
+--FROM employees 
+--WHERE salary > 50000
+
+--SELECT age, name
+--FROM employees
+--WHERE age < 30
+
+--SELECT * FROM employees
+--ORDER BY salary ASC
+
+--SELECT * FROM employees
+--ORDER BY salary DESC
+
+--SELECT * FROM employees
+--WHERE country = 'India' AND department  = 'IT'
+
+--SELECT * FROM employees
+--WHERE country = 'India' OR country = 'USA'
+
+--SELECT * FROM employees
+--WHERE salary >= 40000 AND salary <= 60000
+--ORDER BY salary DESC
+
+--SELECT * FROM employees
+--WHERE department != 'HR'
+
+--SELECT * FROM employees
+--WHERE country = 'UK' AND salary > 40000
+
+--SELECT COUNT(name) AS counted_names
+--FROM employees 
+--WHERE COUNT(name)
+
+--SELECT AVG(salary) AS average_salary
+--FROM employees
+--WHERE country = 'India'
+
+--SELECT SUM(salary) Total_salary
+--FROM employees
+
+--SELECT MAX(salary) AS MAX
+--FROM employees
+
+--SELECT MIN(age) AS Mini
+--FROM employees
+
+--SELECT * FROM employees
